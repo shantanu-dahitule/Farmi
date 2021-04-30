@@ -1,0 +1,2 @@
+G:\Project Done by ME\Crop prediction\First_flask\First_flask\obj\Any CPU\Debug\First_flask.pyproj.CoreCompileInputs.cache
+G:\Projects to compete\Crop prediction\First_flask\First_flask\obj\Any CPU\Debug\First_flask.pyproj.CoreCompileInputs.cache
