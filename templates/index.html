@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{url_for('static', filename='MainStyle.css')}}">
+
+    <title>Home Page</title>
+    <style>
+        .w3-row-padding{
+            padding:0 4px;
+        }
+        .w3-half{
+            float:left;
+            width:33.330%;
+        }
+
+    </style>
+</head>
+<body style="background-color:#f1f1f1 !important">
+    <!--<div style="display:block; width:100%;">
+        <iframe id="frmMenu" src="WelcomePage.html" scrolling="no" frameborder="0"></iframe>
+    </div>-->
+
+    <div class="Crop-image">
+        <div class="welcome-text">
+            <h1><a href="/" style="color:white;font-size:70px">Here is consultant !</a></h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <ul class="navmenu-1">
+            <li> <a href="/">Home</a>
+            <li class="active"> <a href="/home">PREDICT</a>
+            <li> <a href="/about">About</a>
+            <li><a href="/contact">Contact</a>
+            <li><a href="/blog">Blog</a>
+        </ul>
+    </div>
+
+
+    <script>
+        $('.navmenu-1').on('click', 'li', function () {
+            $('navmenu-1 li.active').removeClass('active');
+            $(this).addClass('active');
+        })
+
+
+    </script>
+    <div class="Farmer-image">
+        <div class="bg-text">
+
+            <div class="logic" style="color:white">
+                <h1>  Predict the crop</h1>
+                <form method="POST" , action="{{url_for('predict')}}">
+
+                    <div class="w3-row-padding">
+                        <div class="w3-half">
+                            <div>
+                                <img src="static/Nitrogenimg.gif" style="width:40%" onclick="onClick(this)" alt="Concrete meets bricks">
+                                <input id="N" type="text" name="N" placeholder="Nitrogen" required="required" /><br />
+                            </div>
+                            <br />
+                            <div>
+                                <img src="static/phosphorus.gif" style="width:40%" onclick="onClick(this)" alt="Concrete meets bricks">
+                                <input id="P" type="text" name="P" placeholder="Phosporus" required="required" /><br />
+                            </div>
+                            <br />
+
+
+                        </div>
+                        <div class="w3-half">
+                            <div>
+                                <img src="static/potassium2.gif" style="width:38%" onclick="onClick(this)" alt="Concrete meets bricks">
+                                <input id="K" type="text" name="K" placeholder="Potassium" required="required" /><br />
+                            </div>
+                            <br />
+                            <div>
+                                <img src="static/temperature.gif" style="width:40%" onclick="onClick(this)" alt="Concrete meets bricks">
+                                <input id="temperature" type="text" name="T" placeholder="temperature" required="required" /><br />
+                            </div>
+                            <br />
+                            <div>
+                                <img src="static/humidity.gif" style="width:40%" onclick="onClick(this)" alt="Concrete meets bricks">
+                                <input id="Humidity" type="text" name="H" placeholder="Humidity" required="required" /><br />
+                            </div>
+
+                        </div>
+
+                        <div class="w3-half">
+                            <div>
+                                <img src="static/ph.gif" style="width:50%;" onclick="onClick(this)" alt="Concrete meets bricks">
+                                <input id="ph" type="text" name="ph" placeholder="ph" required="required" /><br />
+                            </div>
+                            <br />
+                            <div>
+                                <img src="static/rainfall.gif" style="width:40%" onclick="onClick(this)" alt="Concrete meets bricks">
+                                <input id="rainfall" type="text" name="R" placeholder="Rainfall" required="required" /><br />
+                            </div>
+                            <br />
+
+
+                        </div>
+                    </div>
+                    <!--<input id="N" type="text" name="N" placeholder="Nitrogen" required="required" /><br />
+                    <input id="P" type="text" name="P" placeholder="Phosporus" required="required" /><br />
+                    <input id="K" type="text" name="K" placeholder="Potassium" required="required" /><br />
+                    <input id="temperature" type="text" name="T" placeholder="temperature" required="required" /><br />
+                    <input id="Humidity" type="text" name="H" placeholder="Humidity" required="required" /><br />
+                    <input id="ph" type="text" name="ph" placeholder="ph" required="required" /><br />
+                    <input id="rainfall" type="text" name="R" placeholder="Rainfall" required="required" /><br />
+                    <input id="Submit" type="submit" class="btn btn-primary btn-block btn-large" value="Predict" />-->
+
+
+
+            </div>
+
+            <br />
+            <br />
+            <p></p>
+            <div align="center" style="bottom:0; padding-top:40%">
+                <input id="Submit" type="submit" class="button" value="Predict" />
+                <p>
+                    <h1>{{prediction}}</h1>
+                </p>
+            </div>
+            <!--<button class="button" type="submit" id="Submit" value="Predict">click</button>-->
+
+        </div>
+        </form>
+    </div>
+
+
+
+    <script src="">
+
+
+    </script>
+
+</body>
+</html>

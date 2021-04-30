@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{url_for('static', filename='MainStyle.css')}}">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap.min.css')}}">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='all.min.css')}}">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    
+    <link rel="stylesheet" href="{{url_for('static', filename='clean-blog.min.css')}}">
+    <title>Blog Page</title>
+    <style>
+        @media only screen and (min-width: 768px) {
+        }
+
+        .post-preview > a > .post-title {
+            font-size: 36px;
+        }
+
+        .post-preview > a > .post-title {
+            font-size: 30px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .post-preview > a {
+            color: #212529;
+        }
+
+            .post-preview > a > .post-subtitle {
+                font-weight: 300;
+                margin: 0 0 10px;
+            }
+
+
+        .Contactcontainer {
+            width: 60%;
+            margin-right: 20%;
+            margin-left: 20%;
+        }
+
+        .Contactrow {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="Blog-image">
+        <div class="welcome-text">
+            <h1><a href="/" style="color:white;font-size:70px">Write to HELP</a></h1>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="navmenu-1">
+            <li> <a href="/">HOME</a>
+            <li> <a href="/home">PREDICT</a>
+            <li> <a href="/about">ABOUT</a>
+            <li><a href="/contact">Contact</a>
+            <li class="active"><a href="/blog">Blog</a>
+        </ul>
+    </div>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    
+    <script>
+        $('.navmenu-1').on('click', 'li', function () {
+            $('navmenu-1 li.active').removeClass('active');
+            $(this).addClass('active');
+        })
+
+
+    </script>
+    <div>
+        <strong>  <a href="#" ; style="color: white">Write your blog</a></strong>
+    </div>
+    <div class="Contactcontainer">
+        <div class="Contactrow">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="post-preview">
+                    <a href="#">
+                        <h2 class="post-title">
+                            Man must explore, and this is exploration at its greatest
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Problems look mighty small from 150 miles up
+                        </h3>
+                    </a>
+                    <p class="post-meta">
+                        Posted by
+                        <a href="#">Start Bootstrap</a>
+                        on September 24, 2019
+                    </p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="#">
+                        <h2 class="post-title">
+                            I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+                        </h2>
+                    </a>
+                    <p class="post-meta">
+                        Posted by
+                        <a href="#">Start Bootstrap</a>
+                        on September 18, 2019
+                    </p>
+                </div>              
+                <hr>
+                <!-- Pager -->
+                <div class="clearfix">
+                    <a class="btn btn-primary float-right" href="#">Older Posts →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
