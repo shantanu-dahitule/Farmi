@@ -1,0 +1,315 @@
+﻿
+
+
+
+        
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.AboutContainer {
+    width: 100%;  
+    margin-right: auto;
+    margin-left: auto;
+}
+.Aboutrow {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+}
+.content-left {
+    width: 700px;
+    padding: 20px 0;
+    float: left;
+}
+
+ul.navmenu-1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+    ul.navmenu-1 li.active a,
+    ul.navmenu-1 li.active:hover a {
+        color: white;
+        background-color: #4CAF50;
+    }
+
+ul.navmenu-1 {
+    overflow: hidden;
+    background-color: #333;
+}
+
+    ul.navmenu-1 li {
+        float: left;
+    }
+
+        ul.navmenu-1 li a {
+            color: white;
+            text-transform: uppercase;
+            font-size: 17px;
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            ul.navmenu-1 li a:hover {
+                background-color: #111;
+            }
+
+     /*   ul.navmenu-1 li:last-child {
+            float: right;
+        }*/
+
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Crop-image {
+    background: url(../static/imgCrop.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.Blog-image {
+    background: url(../static/blog.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.AboutUs-image {
+    background: url('../static/about-us-v1 (2).gif') no-repeat center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    text-align:left
+}
+.Contact-image {
+    background: url(../static/imgContactUs.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+ 
+}
+
+    .Farmer-image {
+        /*background: url(../static/imgFarmer.jpg) no-repeat center;*/
+        background-size: cover;
+        height:900px;
+        position: relative;
+        
+        padding: 10px;
+    }
+.CommonStyleForContactAndAboutBodyHeader {
+    background-size: cover;
+    height: 900px;
+    position: relative;
+    padding: 1px;
+}
+
+.CommonStyleForContactAndAboutBody {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    position: absolute;
+    /*   transform: translate(-50%, -50%);*/
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.ContactHeader {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+}
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.welcome-text {
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 50em;
+    transform: translate(-50%, -50%);
+    color: white;
+    white-space: nowrap;
+    animation: welcome 4s steps(49)1s 1 normal both, blinkTextCorsor 400ms steps(49) infinite normal;
+
+}
+
+@keyframes welcome {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 45em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255,255,255,0.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@-moz-keyframes blinkTextCursor {
+}
+
+@-webkit-keyframes blinkTextCursor {
+}
+
+.outer-wrapper {
+    display: inline-block;
+    margin: 15px;
+    width:100%;
+    padding-left:40%;
+}
+
+.frame {
+    width: 300px;
+    height: 110px;
+    border: 3px solid black;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+    background-color: black;
+    color: aliceblue;
+    position:center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    background-size: cover;
+}
+
+a.more {
+    background-color: #4CAF50;
+    color: #ffffff;
+    display: block;
+    float: right;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 120px;
+}
+/*styles for social media handles*/
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+/*Contact us footer styles*/
+footer .copyright {
+    font-size: 14px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+/*style go rbutton in Home Page*/
+.button {
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+    .button:after {
+        content: "";
+        background: #90EE90;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+    }
+
+    .button:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+    }
