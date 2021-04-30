@@ -21,6 +21,7 @@ Taking good crop with good yield is vry important. So we decided to do an web pr
 - Also we are planning to build person to person video guidance which help to get consultancy from experts in Farming.
 
 ## Help File 💻
+https://github.com/shantanu-dahitule/Farmi.git
 
 ## Built With ⚙
 -Python (for Crop predicion)
