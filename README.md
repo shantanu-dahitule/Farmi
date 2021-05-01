@@ -24,7 +24,7 @@ Taking good crop with good yield is vry important. So we decided to do an web pr
 https://github.com/shantanu-dahitule/Farmi.git
 
 ## DEMO 
-https://drive.google.com/file/d/10tgg5sX6Rfw3UAa4AtgqB5dAOaE_qV81/view?usp=sharing
+https://youtu.be/RHPJeBjfM4k
 
 ## Built With ⚙
 -Python (for Crop predicion)
